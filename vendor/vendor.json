@@ -4,6 +4,10 @@
 		"install" : [ "./cmd/..." ],
 		"goVersion": "go1.7"
 		 },
+	"scalingo": {
+		"install" : [ "./cmd/..." ],
+		"goVersion": "go1.7"
+		 },
 	"ignore": "test",
 	"package": [
 		{
