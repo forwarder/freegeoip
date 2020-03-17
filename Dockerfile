@@ -2,8 +2,8 @@ FROM golang:1.7
 
 COPY cmd/freegeoip/public /var/www
 
-ADD . /go/src/github.com/fiorix/freegeoip
-RUN cd /go/src/github.com/fiorix/freegeoip/cmd/freegeoip && go get && go install
+ADD . /go/src/github.com/forwarder/freegeoip
+RUN cd /go/src/github.com/forwarder/freegeoip/cmd/freegeoip && go get && go install
 
 ENTRYPOINT ["/go/bin/freegeoip"]
 

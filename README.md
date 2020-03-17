@@ -38,7 +38,7 @@ yum install docker
 Run the freegeoip web server:
 
 ```bash
-docker run --restart=always -p 8080:8080 -d fiorix/freegeoip
+docker run --restart=always -p 8080:8080 -d forwarder/freegeoip
 ```
 
 Test:
@@ -51,7 +51,7 @@ See the **API** section below for details.
 
 ### Other Linux, OS X, or FreeBSD
 
-There are [pre-compiled binaries](https://github.com/fiorix/freegeoip/releases) available. You'll have to set up your own init scripts for your system.
+There are [pre-compiled binaries](https://github.com/forwarder/freegeoip/releases) available. You'll have to set up your own init scripts for your system.
 
 There is also a [Chef cookbook](https://supermarket.chef.io/cookbooks/freegeoip) to deploy it automatically.
 
@@ -66,7 +66,7 @@ These and many other options are described in the help. If you're
 using Docker, you can see them like this:
 
 ```bash
-docker run --rm -it fiorix/freegeoip --help
+docker run --rm -it forwarder/freegeoip --help
 ```
 
 By default, the Docker image of freegeoip does not provide the
@@ -159,9 +159,9 @@ tl;dr if all you want is code then see the `example_test.go` file.
 
 Otherwise check out the godoc reference.
 
-[![GoDoc](https://godoc.org/github.com/fiorix/freegeoip?status.svg)](https://godoc.org/github.com/fiorix/freegeoip)
-[![Build Status](https://secure.travis-ci.org/fiorix/freegeoip.png)](http://travis-ci.org/fiorix/freegeoip)
-[![GoReportCard](https://goreportcard.com/badge/github.com/fiorix/freegeoip)](https://goreportcard.com/report/github.com/fiorix/freegeoip)
+[![GoDoc](https://godoc.org/github.com/forwarder/freegeoip?status.svg)](https://godoc.org/github.com/forwarder/freegeoip)
+[![Build Status](https://secure.travis-ci.org/forwarder/freegeoip.png)](http://travis-ci.org/forwarder/freegeoip)
+[![GoReportCard](https://goreportcard.com/badge/github.com/forwarder/freegeoip)](https://goreportcard.com/report/github.com/forwarder/freegeoip)
 
 ### Features
 
@@ -188,10 +188,10 @@ crafting your own HTTP responses encoded in any format.
 
 Download the package:
 
-	go get -d github.com/fiorix/freegeoip/...
+	go get -d github.com/forwarder/freegeoip/...
 
 Install the web server:
 
-	go install github.com/fiorix/freegeoip/cmd/freegeoip
+	go install github.com/forwarder/freegeoip/cmd/freegeoip
 
 Test coverage is quite good and tests may help you find the stuff you need.
