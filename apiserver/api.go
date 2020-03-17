@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/bradfitz/gomemcache/memcache"
-	"github.com/dnesting/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus"
 	"github.com/fiorix/go-redis/redis"
 	"github.com/go-web/httplog"
 	"github.com/go-web/httpmux"
