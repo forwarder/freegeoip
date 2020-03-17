@@ -3,7 +3,11 @@
   "heroku": {
     "goVersion": "go1.9",
     "install": ["./cmd/..."]
-  },
+	},
+	"scalingo": {
+		"install" : [ "./cmd/..." ],
+		"goVersion": "go1.7"
+	},
   "ignore": "test",
   "package": [
     {
