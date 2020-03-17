@@ -8,4 +8,4 @@ fi
 
 # [ -f "/db.gz" ] && cp /db.gz /tmp/freegeoip/db.gz
 
-exec /go/bin/freegeoip -http :${PORT} -use-x-forwarded-for -public /app/cmd/freegeoip/public -quota-backend map -quota-max 10000000
+exec freegeoip -http :${PORT} -use-x-forwarded-for -public /app/cmd/freegeoip/public -quota-backend map -quota-max 10000000
